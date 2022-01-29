@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/scripts/Boulder1.gd" type="Script" id=1]
+[ext_resource path="res://resources/boulders/boulder1.png" type="Texture" id=2]
+
+[node name="Boulder1" type="RigidBody2D" groups=[
+"boulder",
+"boulder1",
+]]
+collision_layer = 4
+collision_mask = 2147483651
+gravity_scale = 0.0
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 5.9, 5.9 )
+polygon = PoolVector2Array( -26.3037, -0.133753, -26.3974, -2.19393, -17.5012, -7.99986, -12.1635, -17.9261, -5.60837, -20.08, -5.04651, -20.08, -3.73549, -20.08, -3.36091, -19.8927, -2.23718, -19.9863, -1.48803, -19.799, 0.665787, -19.7054, 2.25774, -19.1435, 3.56876, -19.0499, 13.495, -13.2439, 14.3378, -6.96978, 23.0467, -2.66215, 19.8628, 4.08023, 15.3679, 8.57516, 3.94333, 16.254, 0.197567, 19.4379, -4.85922, 15.3175, -12.4444, 15.3175, -21.0597, 13.1637, -26.8656, 4.08023 )
+[connection signal="body_entered" from="." to="." method="_on_Boulder1_body_entered"]
