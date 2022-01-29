@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/scripts/Boulder2.gd" type="Script" id=1]
+[ext_resource path="res://resources/boulders/boulder2.png" type="Texture" id=2]
+
+[node name="Boulder2" type="RigidBody2D" groups=[
+"boulder",
+"boulder2",
+]]
+collision_layer = 8
+collision_mask = 3
+gravity_scale = 0.0
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 1.15, 1.15 )
+polygon = PoolVector2Array( -173.375, -1.09079, -165.803, -3.31804, -160.012, -10.8907, -147.094, -38.5085, -110.122, -58.5538, -86.5127, -87.0625, -37.5133, -118.689, -28.6043, -127.598, -25.4861, -128.935, -22.368, -128.935, -16.1317, -132.053, 4.35896, -131.607, 5.24986, -129.38, 10.5953, -126.262, 13.7134, -124.48, 22.6224, -118.689, 22.6224, -114.68, 30.6405, -106.662, 34.2041, -106.217, 41.3313, -100.871, 45.7858, -100.426, 47.5676, -99.5351, 47.5676, -92.4079, 51.1312, -90.1807, 56.922, -90.1807, 60.931, -86.1716, 77.4127, -73.2536, 98.3488, -50.9811, 102.803, -44.2994, 117.949, -23.3633, 120.176, -1.09079, 113.494, 5.14551, 101.912, 22.0726, 97.0124, 31.427, 70.7309, 45.6814, 41.3313, 34.0997, 25.7405, 48.7995, -32.6133, 50.5813, -49.9859, 38.1087, -152.885, 41.2269, -158.23, 36.327, -159.566, 19.8453 )
+[connection signal="body_entered" from="." to="." method="_on_Boulder2_body_entered"]
