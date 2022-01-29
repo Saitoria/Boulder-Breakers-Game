@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shootingsound.wav-8debd3aa3b9bd7017e6e62f7793d7597.sample"
+
+[deps]
+
+source_file="res://resources/sounds/shootingsound.wav"
+dest_files=[ "res://.import/shootingsound.wav-8debd3aa3b9bd7017e6e62f7793d7597.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

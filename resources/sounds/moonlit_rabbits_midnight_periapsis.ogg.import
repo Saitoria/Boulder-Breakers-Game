@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/moonlit_rabbits_midnight_periapsis.ogg-4313bf3737b5dbba72946cdf21c40c6c.oggstr"
+
+[deps]
+
+source_file="res://resources/sounds/moonlit_rabbits_midnight_periapsis.ogg"
+dest_files=[ "res://.import/moonlit_rabbits_midnight_periapsis.ogg-4313bf3737b5dbba72946cdf21c40c6c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
