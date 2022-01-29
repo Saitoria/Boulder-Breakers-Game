@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AdMob",
+"language": "GDScript",
+"path": "res://admob-lib/admob.gd"
+} ]
+_global_script_class_icons={
+"AdMob": "res://admob-lib/icon.png"
+}
+
+[application]
+
+config/name="Boulder Breakers"
+run/main_scene="res://StartUpLogo.tscn"
+boot_splash/image="res://resources/nothing.png"
+config/icon="res://resources/icon/android/playstore-icon.png"
+
+[autoload]
+
+Global="*res://resources/scripts/Global.gd"
+ProgressStatistics="*res://ProgressStatistics.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="viewport"
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+environment/default_environment="res://default_env.tres"
